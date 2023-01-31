@@ -94,14 +94,15 @@ body{
     background-color: hsl(218, 23%, 16%);
 
     .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        display: block;
+        position: relative;
+        max-width: 33.7rem;
+        margin: 1.3rem;
         background-color: hsl(217, 19%, 24%);
         padding: 3rem;
         border-radius: 1.25rem;
+        margin-bottom: 8rem;
+        text-align: center;
 
         .text{
             h2{
@@ -113,6 +114,29 @@ body{
             p{
                 font-size: 1.4rem;
                 margin-bottom: 2.5rem;
+                max-width: 33.7rem;
+            }
+        }
+
+        #button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            size: 4rem;
+            width: 3.75rem;
+            height: 3.75rem;
+            margin-top: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            border: none;
+            background-color: hsl(150deg, 100%, 66%);
+            transition: 0.2s ease-in-out;
+
+            &:hover{
+                cursor: pointer;
+                box-shadow: 4px 0px 59px 9px hsl(150deg, 100%, 66%);;
             }
         }
     }

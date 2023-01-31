@@ -19,7 +19,7 @@ async function getAPI(){
     //exibir resposta
     const showAdvice = () => {
         showId.textContent = `${answer.slip.id}`
-        showAnswer.textContent = `“${answer.slip.advice}”`
+        showAnswer.textContent = ` “${answer.slip.advice}”`
     }
 
     }catch{
